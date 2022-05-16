@@ -1,0 +1,2 @@
+// this is how we convert the .Ui file into python file
+python -m PyQt5.uic.pyuic -x FunctionPlotter.ui -o GUI.py
