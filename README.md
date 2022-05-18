@@ -38,14 +38,14 @@ git clone https://github.com/abdelazizSalah/FunctionPlotter
 <img src="screenshots/Del.jpeg" alt="5" height="400" width="500">
 
 ### CLR Button
-<img src="screenshots/Clr.jpeg" alt="6" height="400" width="500">
+<img src="screenshots/CLR.jpeg" alt="6" height="400" width="500">
 
 ### Draw Button
 <img src="screenshots/Draw.jpeg" alt="7" height="400" width="500">
 
 
 ### plotting 2*x + x^2
-<img src="screenshots/FirstEq.jpeg" alt="8" height="400" width="500">
+<img src="screenshots/firstEq.jpeg" alt="8" height="400" width="500">
 
 ### plotting 1/(2 - x)
 <img src="screenshots/SecondEq.jpeg" alt="9" height="400" width="500">
