@@ -1,6 +1,8 @@
+from tkinter import messagebox
 import numpy as np
 import matplotlib.pyplot as plt
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 import re
 import math
 
@@ -533,6 +535,7 @@ class Ui_FunctionPlotter(object):
                                       "}\n"
                                       "\n"
                                       "")
+        self.show_MessageBox()
         self.centralwidget = QtWidgets.QWidget(FunctionPlotter)
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
@@ -949,7 +952,6 @@ class Ui_FunctionPlotter(object):
 
     def Draw(self):
         string = self.EquationTaker.toPlainText()
-        print(string)
         if string != "Enter The equation using the Buttons" or string == ' ':  # entries must be not empty
             try:
                 func = self.string2func(string)
@@ -967,11 +969,20 @@ class Ui_FunctionPlotter(object):
                 plt.show()
             except:
                 self.statusbar.showMessage(
-                    "Exception Has Occured During Plotting")
+                    "Wrong Formate!")
 
         else:
             self.statusbar.showMessage(
                 "Please insert an equation and make sure that the min val is less than max val")
+
+    def show_MessageBox(self):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Information)
+        msg.setStandardButtons(QMessageBox.Ok)
+        msg.setWindowTitle("Tips")
+        msg.setText(
+            "   Please read the following instructions carefully\n\n- All Warnings will be shown in the status bar down the screen\n\n- You can't type in the program, you should use the buttons displayed to insert your equation\n\n- the equation formate must contain x\n\n- if you want to plot 2x you should insert it in this formate 2*x not 2x\n\n- you must take care of the brackets\n\n- minimum values must be less than maximum values")
+        x = msg.exec_()
 ###################################################################################
 
 
@@ -981,5 +992,6 @@ if __name__ == "__main__":
     FunctionPlotter = QtWidgets.QMainWindow()
     ui = Ui_FunctionPlotter()
     ui.setupUi(FunctionPlotter)
+
     FunctionPlotter.show()
     sys.exit(app.exec_())
