@@ -23,24 +23,24 @@ git clone https://github.com/abdelazizSalah/FunctionPlotter
 ### Tips Screen
 <img src="screenshots/TipsScreen.png" alt="1" height="300" width="500">
 
-#### hovering over 
+## hovering over 
 
-## input 
+### input 
 <img src="screenshots/HoverInput.jpeg" alt="2" height="400" width="500">
 
-## minimum value 
+### minimum value 
 <img src="screenshots/HoverMin.jpeg" alt="3" height="400" width="500">
 
-## maximum value 
+### maximum value 
 <img src="screenshots/HoverMax.jpeg" alt="4" height="400" width="500">
 
-## Del Button
+### Del Button
 <img src="screenshots/Del.jpeg" alt="5" height="400" width="500">
 
-## CLR Button
+### CLR Button
 <img src="screenshots/Clr.jpeg" alt="6" height="400" width="500">
 
-## Draw Button
+### Draw Button
 <img src="screenshots/Draw.jpeg" alt="7" height="400" width="500">
 
 
