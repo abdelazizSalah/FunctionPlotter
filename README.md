@@ -23,7 +23,7 @@ git clone https://github.com/abdelazizSalah/FunctionPlotter
 ### Tips Screen
 <img src="screenshots/TipsScreen.png" alt="1" height="300" width="500">
 
-### hovering over 
+#### hovering over 
 
 ## input 
 <img src="screenshots/HoverInput.jpeg" alt="2" height="400" width="500">
